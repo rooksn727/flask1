@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <!-- can have multiple {{var}} instances as long as theyre referenced
+    in render_template-->
+    <!-- <p>{{content}}</p> -->
+    <!-- can run python scripts within { and %  -->
+    {% for x in range(10) %}
+        {% if x % 2 == 1 %}
+            <p>{{x}}</p>
+        {% endif %}
+    {% endfor%}
+</body>
+</html>
